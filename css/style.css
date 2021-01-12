@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Riutilizzabili */
 a {
     text-decoration: none;
     color: #868686;
+}
+
+.black {
+    color: black;
 }
 
 .btn {
@@ -16,6 +25,11 @@ a {
     border-radius: 30px;
 }
 
+.relative {
+    position: relative;
+}
+
+/* Header */
 header {
     height: 80px;
     box-shadow: 0 0 4px 2px rgba(133, 133, 133, 0.397);
@@ -44,6 +58,35 @@ header ul li i {
     vertical-align: middle;
 }
 
-.active {
-    color: black;
+/* Account Dropdown */
+div.accounts-dropdown,
+div.products-dropdown {
+    width: 150px;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0 0 4px 2px rgba(133, 133, 133, 0.397);
+    position: absolute;
+    top: 80px;
+    left: -35%;
+    display: none;
+    text-align: center;
+}
+
+div.accounts-dropdown span,
+div.products-dropdown span {
+    width: 100%;
+}
+
+div.accounts-dropdown.active,
+div.products-dropdown.active {
+    display: flex;
+}
+
+/* Products Dropdown */
+div.products-dropdown {
+    width: 500px;
+    padding: 10px 50px;
+    left: -300%;
+    text-align: left;
 }
