@@ -14,7 +14,7 @@ a {
     color: #868686;
 }
 
-.black {
+a:hover {
     color: black;
 }
 
@@ -31,10 +31,15 @@ a {
 
 /* Header */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
     height: 80px;
     box-shadow: 0 0 4px 2px rgba(133, 133, 133, 0.397);
     font-size: 20px;
-    padding: 0 40px;
+    padding: 0 150px;
 }
 
 header ul {
@@ -60,7 +65,10 @@ header ul li i {
 
 /* Account Dropdown */
 div.accounts-dropdown,
-div.products-dropdown {
+div.products-dropdown,
+div.company-dropdown,
+div.help-dropdown,
+div.language-dropdown {
     width: 150px;
     padding: 10px;
     flex-wrap: wrap;
@@ -74,12 +82,18 @@ div.products-dropdown {
 }
 
 div.accounts-dropdown span,
-div.products-dropdown span {
+div.products-dropdown span,
+div.company-dropdown span,
+div.help-dropdown span,
+div.language-dropdown span {
     width: 100%;
 }
 
 div.accounts-dropdown.active,
-div.products-dropdown.active {
+div.products-dropdown.active,
+div.company-dropdown.active,
+div.help-dropdown.active,
+div.language-dropdown.active {
     display: flex;
 }
 
@@ -89,4 +103,41 @@ div.products-dropdown {
     padding: 10px 50px;
     left: -300%;
     text-align: left;
+}
+
+.tag {
+    color: #eb008d;
+    vertical-align: super;
+    font-size: 15px;
+}
+
+/* Company Dropdown */
+div.company-dropdown {
+    width: 250px;
+    padding: 10px 50px;
+    left: -120%;
+    text-align: left;
+}
+
+/* Help Dropdown */
+div.help-dropdown {
+    width: 300px;
+    padding: 10px 50px;
+    left: -300%;
+    text-align: left;
+}
+
+/* Language Dropdown */
+div.language-dropdown {
+    width: 150px;
+    padding: 10px;
+    left: -150%;
+}
+
+.language i {
+    display: none;
+}
+
+.language i.active {
+    display: inline-block;
 }
