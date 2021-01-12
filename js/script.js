@@ -21,5 +21,4 @@ $(document).ready(function(){
         $('i.fa-chevron-down').toggleClass('active');
         $('i.fa-chevron-up').toggleClass('active');
     });
-
 });
