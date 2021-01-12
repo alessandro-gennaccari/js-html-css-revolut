@@ -3,3 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+    color: #868686;
+}
+
+.btn {
+    background-color: #eb008d;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+header {
+    height: 80px;
+    box-shadow: 0 0 4px 2px rgba(133, 133, 133, 0.397);
+    font-size: 20px;
+    padding: 0 40px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    line-height: 80px;
+}
+
+header ul li img {
+    height: 40px;
+    margin-top: 20px;
+}
+
+header ul li a.upper {
+    text-transform: uppercase;
+}
+
+header ul li i {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.active {
+    color: black;
+}
