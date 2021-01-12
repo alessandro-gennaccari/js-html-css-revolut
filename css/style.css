@@ -77,7 +77,8 @@ div.language-dropdown {
     box-shadow: 0 0 4px 2px rgba(133, 133, 133, 0.397);
     position: absolute;
     top: 80px;
-    left: -35%;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
     text-align: center;
 }
@@ -102,7 +103,6 @@ div.language-dropdown.active {
 div.products-dropdown {
     width: 500px;
     padding: 10px 50px;
-    left: -300%;
     text-align: left;
 }
 
@@ -116,7 +116,6 @@ div.products-dropdown {
 div.company-dropdown {
     width: 250px;
     padding: 10px 50px;
-    left: -120%;
     text-align: left;
 }
 
@@ -124,7 +123,6 @@ div.company-dropdown {
 div.help-dropdown {
     width: 300px;
     padding: 10px 50px;
-    left: -300%;
     text-align: left;
 }
 
@@ -132,7 +130,6 @@ div.help-dropdown {
 div.language-dropdown {
     width: 150px;
     padding: 10px;
-    left: -150%;
 }
 
 .language i {
